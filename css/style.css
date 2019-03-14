@@ -1,0 +1,14 @@
+/* Import Google Font (Cabin) */
+@import url('https://fonts.googleapis.com/css?family=Cabin:500');
+
+/* Reset Semua */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Style untuk Body */
+body{
+    background-color: #d6d6d6;
+    font-family: 'Cabin', sans-serif;
+}
