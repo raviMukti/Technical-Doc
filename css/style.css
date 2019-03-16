@@ -1,5 +1,6 @@
 /* Import Google Font (Cabin) */
 @import url('https://fonts.googleapis.com/css?family=Cabin:500');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
 
 /* Reset Semua */
 *{
@@ -11,4 +12,107 @@
 body{
     background-color: #d6d6d6;
     font-family: 'Cabin', sans-serif;
+    overflow-y: hidden;
+}
+
+/* Style untuk pembungkus */
+#wrapper{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Style untuk side nav-bar */
+#navbar{
+    background-color: #ffffff;
+    border-right: 5px solid black;
+}
+
+/* For the header Tag */
+#navbar header{
+    background-color: #d9ff00;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Baloo Chettan', cursive;
+    line-height: 3.85em;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 16px;
+}
+
+/* For the Ul */
+#navbar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* For the a tag */
+#navbar ul a{
+    text-decoration: none;
+    border: 1px solid black;
+    flex-basis: 10%;
+    width: 100%;
+    color: #ff0000;
+}
+
+/* For the list item */
+#navbar ul li {
+    list-style: none;
+}
+
+/* Style untuk main-doc */
+#main-doc{
+    width: 90%;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+/* For the header in the main-doc */
+#main-doc header{
+    font-weight: 400;
+    font-family: 'Baloo Chettan', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* Untuk article */
+#main-doc article{
+    text-align: justify;
+}
+
+/* Untuk article list */
+code{
+    background-color: #e7e5e5;
+    display: block;
+    height: 150px;
+    padding: 20px;
+    white-space: pre;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+/* Untuk mobile device */
+@media(max-width:500px){
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar{
+        flex-basis: 40%
+        width: 100%;
+    }
+
+    #navbar ul{
+        height: 20vh;
+        overflow-y: scroll;
+    }
+
 }
